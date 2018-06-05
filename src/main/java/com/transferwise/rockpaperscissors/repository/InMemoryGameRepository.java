@@ -13,7 +13,7 @@ import java.util.Map;
 @Component
 public class InMemoryGameRepository implements GameRepository {
 
-    Map<Long, Game> games = new HashMap<>();
+    private Map<Long, Game> games = new HashMap<>();
 
     private static Long nextGameId = 0L;
 
