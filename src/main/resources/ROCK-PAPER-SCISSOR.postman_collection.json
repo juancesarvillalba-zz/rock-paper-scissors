@@ -1,0 +1,62 @@
+{
+	"variables": [],
+	"info": {
+		"name": "ROCK-PAPER-SCISSOR",
+		"_postman_id": "c47c62e5-d46b-916d-3fce-f18f8bc81481",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Find Game",
+			"request": {
+				"url": "http://localhost:8080/api/game/1",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Create Game",
+			"request": {
+				"url": "http://localhost:8080/api/game",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\n\"playerOneName\" : \"Juan\" \n\t\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Play",
+			"request": {
+				"url": "http://localhost:8080/api/game/1/play",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\"ROCK\"\n\t\n\n"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
